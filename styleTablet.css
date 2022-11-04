@@ -1,0 +1,77 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+  .menu {
+    display: block;
+  }
+  .navbar-left ul{
+    display: none;
+  }
+  .navbar-left.show ul{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left: 0;
+    top: 70px;
+    text-align: left;
+    line-height: 40px;
+    color: var(--black);
+    background-color: var(--white);
+    /* background-color: black; */
+
+  }
+.navbar-left ul li a{
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: lighter;
+}
+.navbar-email{
+  display: none;
+}
+  .desktop-menu {
+    display: block;
+    border-top: 1px solid var(--very-light-pink); 
+    background-color: var(--white);
+  }
+  .desktop-menu li{
+    height: 40px;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  .desktop-menu li:last-child{
+    border: none;
+    position: relative;
+    top: -10px;
+  }
+  .mobile-email{
+    display: block;
+    position: relative;
+    font-size: var(--md);
+    top: 10px;
+    left: 10px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  .product-card {
+    width: 140px;
+  }
+  .product-card img {
+    width: 140px;
+    height: 140px;
+  }
+  .product-detail.show { 
+    display: block;   
+    margin-right: 0;
+    min-width: 315px;
+    width: 90%;
+  }
